@@ -38,7 +38,7 @@ a starting time by the tick amount. See the examples below.
 
 To generate events in real-time ...
 
-    g = EventGenerator(100)  # Number of operations per minute
+    g = notigen.EventGenerator(100)  # Number of operations per minute
     now = datetime.datetime.utcnow()
     start = now
     nevents = 0
@@ -51,7 +51,7 @@ To generate events in real-time ...
 
 To generate events as fast as possible ...
 
-    g = EventGenerator(100)  # Not really relevant
+    g = notigen.EventGenerator(100)  # Not really relevant
     now = datetime.datetime.utcnow()
     start = now
     nevents = 0
