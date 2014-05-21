@@ -17,6 +17,9 @@ import notigen
 connection = driver.create_connection("localhost", 5672, 'guest', 'guest',
                                       "librabbitmq", "/")
 exchange = driver.create_exchange("monitor", "topic")
+queue_name = "monitor.info"
+queue = driver.create_queue(queue_name, exchange, queue_name, channel=connection.channel())
+queue.declare()
 
 g = notigen.EventGenerator(100)  # Number of operations per minute
 now = datetime.datetime.utcnow()
@@ -27,6 +30,7 @@ while nevents < 10000:
     if e:
         nevents += len(e)
         for event in e:
-            driver.send_notification(event, "monitor.info", connection, exchange)
+            driver.send_notification(event, queue_name, connection, exchange)
+            print nevents, event['when'], event['event']
 
     now = datetime.datetime.utcnow()
