@@ -1,14 +1,17 @@
-import datetime
-
-from notabene import kombu_driver as driver
-import notigen
-
 """Pump simulated OpenStack notificationss into RabbitMQ.
 
 You need to install rabbitqm-server and
 pip install librabbitmq
-pip install notabene
+pip install --pre notabene
+pip install --pre notification_utils
 """
+
+
+import datetime
+
+from notabene import kombu_driver as driver
+import notification_utils
+import notigen
 
 
 connection = driver.create_connection("localhost", 5672, 'guest', 'guest',

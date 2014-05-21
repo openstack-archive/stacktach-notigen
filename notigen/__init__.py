@@ -269,13 +269,13 @@ class EventGenerator(object):
         results = []
         if event[-1] == '*':
             event = event[0:-1]
-            extra = {'when': now, 'node': node}
+            extra = {'when': str(now), 'node': node}
             results.append(self._pkg(base, extra, {'event': event + "start"}))
             now = self._bump_time(now, 0.25, 60.0 * 15.0)  # In compute node
-            extra = {'when': now, 'node': node}
+            extra = {'when': str(now), 'node': node}
             results.append(self._pkg(base, extra, {'event': event + "end"}))
         else:
-            extra = {'when': now, 'node': node}
+            extra = {'when': str(now), 'node': node}
             results.append(self._pkg(base, extra, {'event': event}))
         return results
 
