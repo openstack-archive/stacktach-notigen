@@ -18,10 +18,11 @@ connection = driver.create_connection("localhost", 5672, 'guest', 'guest',
                                       "librabbitmq", "/")
 exchange = driver.create_exchange("monitor", "topic")
 queue_name = "monitor.info"
-queue = driver.create_queue(queue_name, exchange, queue_name, channel=connection.channel())
+queue = driver.create_queue(queue_name, exchange, queue_name,
+                            channel=connection.channel())
 queue.declare()
 
-g = notigen.EventGenerator(100)  # Number of operations per minute
+g = notigen.EventGenerator(1000)  # Number of operations per minute
 now = datetime.datetime.utcnow()
 start = now
 nevents = 0
