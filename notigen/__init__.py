@@ -109,7 +109,10 @@ class EventGenerator(object):
 
     def generate(self, now):
         self._add_new_sequence(now)
-        return self._get_ready_events(now)
+        events = self._get_ready_events(now)
+        for event in events:
+            event['when'] = str(event['when'])
+        return events
 
     def move_to_next_tick(self, now):
         return now + datetime.timedelta(milliseconds=self.millisecond_per_tick)
@@ -269,13 +272,13 @@ class EventGenerator(object):
         results = []
         if event[-1] == '*':
             event = event[0:-1]
-            extra = {'when': str(now), 'node': node}
+            extra = {'when': now, 'node': node}
             results.append(self._pkg(base, extra, {'event': event + "start"}))
             now = self._bump_time(now, 0.25, 60.0 * 15.0)  # In compute node
-            extra = {'when': str(now), 'node': node}
+            extra = {'when': now, 'node': node}
             results.append(self._pkg(base, extra, {'event': event + "end"}))
         else:
-            extra = {'when': str(now), 'node': node}
+            extra = {'when': now, 'node': node}
             results.append(self._pkg(base, extra, {'event': event}))
         return results
 
