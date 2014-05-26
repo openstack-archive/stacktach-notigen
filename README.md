@@ -61,3 +61,5 @@ To generate events as fast as possible ...
             nevents += len(e)
 
         now = g.move_to_next_tick(now)
+
+Datetimes are returned as strings as OpenStack would. 
