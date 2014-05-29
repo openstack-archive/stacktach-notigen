@@ -112,6 +112,7 @@ class EventGenerator(object):
         events = self._get_ready_events(now)
         for event in events:
             event['when'] = str(event['when'])
+            event['message_id'] = str(uuid.uuid4())
         return events
 
     def move_to_next_tick(self, now):
