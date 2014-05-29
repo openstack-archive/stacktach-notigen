@@ -14,7 +14,7 @@ class Callback(object):
     def on_event(self, deployment, routing_key, body, exchange):
         print "Got:", body
         self.x += 1
-        if self.x > 10:
+        if self.x > 100000:
             sys.exit(1)
 
     def shutting_down(self):

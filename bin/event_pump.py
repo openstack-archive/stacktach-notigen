@@ -32,6 +32,6 @@ while nevents < 10000:
         nevents += len(e)
         for event in e:
             driver.send_notification(event, queue_name, connection, exchange)
-            print nevents, event['when'], event['event']
+            print nevents, event['when'], event['event_type']
 
     now = datetime.datetime.utcnow()

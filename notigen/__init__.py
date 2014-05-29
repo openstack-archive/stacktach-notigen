@@ -163,7 +163,7 @@ class EventGenerator(object):
                     self.instances_in_use.add(uuid)
                 elif event['is_delete']:
                     self.instances_in_use.remove(uuid)
-            #print "%s %40s U:%4s" % (' ' * 20, event['event'], uuid[-4:])
+            #print "%s %40s U:%4s" % (' ' * 20, event['event_type'], uuid[-4:])
             ready.append(event)
 
     def _get_action(self, now):
@@ -273,13 +273,13 @@ class EventGenerator(object):
         if event[-1] == '*':
             event = event[0:-1]
             extra = {'when': now, 'node': node}
-            results.append(self._pkg(base, extra, {'event': event + "start"}))
+            results.append(self._pkg(base, extra, {'event_type': event + "start"}))
             now = self._bump_time(now, 0.25, 60.0 * 15.0)  # In compute node
             extra = {'when': now, 'node': node}
-            results.append(self._pkg(base, extra, {'event': event + "end"}))
+            results.append(self._pkg(base, extra, {'event_type': event + "end"}))
         else:
             extra = {'when': now, 'node': node}
-            results.append(self._pkg(base, extra, {'event': event}))
+            results.append(self._pkg(base, extra, {'event_type': event}))
         return results
 
     def _pkg(self, *args):
