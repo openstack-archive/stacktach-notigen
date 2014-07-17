@@ -20,8 +20,10 @@ Built from work done in https://github.com/SandyWalsh/twobillion
 
 import datetime
 import heapq
+import operator
 import uuid as uuidlib
 import random
+import sys
 import time
 
 
@@ -39,7 +41,6 @@ COMPUTE_EVENTS = [
     'compute.instance.snapshot.*',
     'compute.instance.suspend',
     'compute.instance.resume',
-    'compute.instance.exists',
     'compute.instance.update',
     'attach_volume',
     'change_instance_metadata',
@@ -107,6 +108,8 @@ class EventGenerator(object):
         self.tick = now + datetime.timedelta(
                                     milliseconds=self.millisecond_per_tick)
 
+        self.last_exists = now  # When were last .exists sent?
+
     def generate(self, now):
         self._add_new_sequence(now)
         events = self._get_ready_events(now)
@@ -155,7 +158,7 @@ class EventGenerator(object):
                 return ready
             when, event, start, end = self.next_events[0]  # peek
             if when > now:
-                return ready
+                break
             when, event, start, end = heapq.heappop(self.next_events)
             uuid = event['uuid']
             request = event['request_id']
@@ -166,6 +169,19 @@ class EventGenerator(object):
                     self.instances_in_use.remove(uuid)
             #print "%s %40s U:%4s" % (' ' * 20, event['event_type'], uuid[-4:])
             ready.append(event)
+
+        # Send .exists every hour for all active instances.
+        if (now - self.last_exists).seconds > 60 * 60:
+            self.last_exists = now
+
+            for instance in self.instances_in_use:
+                base = {'uuid': instance}
+                events, now = self._event(now + datetime.timedelta(seconds = 1),
+                                         base, "exists_node",
+                                         "compute.instance.exists")
+                ready.extend(events)
+
+        return ready
 
     def _get_action(self, now):
         """Get an action sequence. A series of related events
@@ -226,30 +242,39 @@ class EventGenerator(object):
         nbase.update(base)
 
         # All operations start with an API call ...
-        api = self._mk_event(now, nbase, API_NODES,
-                       ['compute.instance.update'])
+        api, now = self._mk_event(now, nbase, API_NODES,
+                                  ['compute.instance.update'])
+        now = self._bump_time(now, 0.5, 3.0)  # From api to service
         event_chain.extend(api)
 
         if is_create:
-            now = self._bump_time(now, 0.5, 3.0)  # From api to scheduler
             scheduler_node = random.choice(SCHEDULERS)
             for e in SCHEDULER_EVENTS:
-                event_chain.extend(self._event(now, nbase, scheduler_node, e))
+                z, now = self._event(now, nbase, scheduler_node, e)
+                event_chain.extend(z)
                 now = self._bump_time(now, 0.1, 0.5)  # inside scheduler
 
             now = self._bump_time(now, 0.5, 3.0)  # In Compute node
-            event_chain.extend(self._event(now, nbase, compute_node,
-                                           'compute.instance.create.*'))
+            z, now = self._event(now, nbase, compute_node,
+                                 'compute.instance.create.*')
+            event_chain.extend(z)
             self.instances[uuid] = compute_node
 
         if is_delete:
-            event_chain.extend(self._event(now, nbase, compute_node,
-                                           'compute.instance.delete.*'))
+            z, now = self._event(now, nbase, compute_node,
+                                 'compute.instance.delete.*')
+            event_chain.extend(z)
             del self.instances[uuid]
 
         if is_update:
             event = random.choice(COMPUTE_EVENTS)
-            event_chain.extend(self._event(now, nbase, compute_node, event))
+            z, now = self._event(now, nbase, compute_node, event)
+            event_chain.extend(z)
+
+        # End the chain with a .exists record
+        now = self._bump_time(now, 0.1, 0.5)
+        z, now = self._event(now, nbase, compute_node, "compute.instance.exists")
+        event_chain.extend(z)
 
         return event_chain
 
@@ -274,14 +299,15 @@ class EventGenerator(object):
         if event[-1] == '*':
             event = event[0:-1]
             extra = {'when': now, 'node': node}
-            results.append(self._pkg(base, extra, {'event_type': event + "start"}))
+            results.append(self._pkg(base, extra,
+                                     {'event_type': event + "start"}))
             now = self._bump_time(now, 0.25, 60.0 * 15.0)  # In compute node
             extra = {'when': now, 'node': node}
             results.append(self._pkg(base, extra, {'event_type': event + "end"}))
         else:
             extra = {'when': now, 'node': node}
             results.append(self._pkg(base, extra, {'event_type': event}))
-        return results
+        return results, now
 
     def _pkg(self, *args):
         """Pack together a bunch of dict's into a single dict."""
@@ -295,7 +321,10 @@ if __name__ == '__main__':
 
     real_time = False
 
-    g = EventGenerator(100)
+    # The lower the ops/minute, the longer it will
+    # take to get N events. This is useful for getting
+    # .exists generated (hourly).
+    g = EventGenerator(1)
     now = datetime.datetime.utcnow()
     start = now
     nevents = 0
