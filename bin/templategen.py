@@ -322,12 +322,12 @@ for stream_type, streams_by_len in patterns.iteritems():
     for k, td in timemap.iteritems():
         this_context[k] = now + td
     for item in output[1:]:
-        now.time.replace(datetime.time.min())
+        now.time().replace(0, 0, 0, 0)
         string = json.dumps(item, cls=DateTimeEncoder)
-        for k, v in this_context:
+        for k, v in this_context.iteritems():
             string = string.replace(k, str(v))
         x = json.loads(string)
-        print json.dumps(x, cls=DateTimeEncoder, sort_keys=Trye, indent=4)
+        print json.dumps(x, cls=DateTimeEncoder, sort_keys=True, indent=4)
         sys.exit(1)
 
     sys.exit(1)
