@@ -187,7 +187,7 @@ def placeholder(value, original, context, key, template, parent):
     # template = "[[[[FOO_%d]]]]"
     # key = "ip"
     #
-    # Context = { key : { original: "[[[[FOO_?]]]]" }}
+    # Context = { key : { original: num }}
     mappings = context.get(key, {})
     index = mappings.get(original)
     if index is None:
@@ -239,14 +239,15 @@ regex_list = [(uuid_regex, "uuid", "[[[[UUID_%d]]]]"),
               ]
 
 protect = {"tenant_id": ["_context_project_id", "_context_project_name",
-                         "_context_tenant", "tenant_id"],
+                         "_context_tenant", "tenant_id", "project_id"],
            "user_id": ["_context_user", "_context_user_id",
-                        "_context_user_name", "user_id"],
-           "display_name": ["display_name",],
+                        "_context_user_name", "user_id", "owner"],
+           "display_name": ["display_name", "name", "display_description"],
            "host": ["host",],
            "hostname": ["hostname",],
            "node": ["node",],
            "reservation_id": ["reservation_id",],
+           "image_name": ["image_name", ],
            "publisher_id": ["publisher_id",]}
 
 
@@ -258,7 +259,7 @@ def scrub(context, struct, parent):
         for index, x in enumerate(struct):
             scrub(context, x, _replace_list(struct, index))
             if type(x) in [unicode, str]:
-                if 'rax' in x or 'rackspace' in x:
+                if 'rack' in x or 'rax' in x or 'rackspace' in x:
                     # reverse insert order so we can safely delete later.
                     to_delete.insert(0, index)
 
@@ -269,7 +270,7 @@ def scrub(context, struct, parent):
         #print "Dict"
         to_delete = []
         for k, v in struct.iteritems():
-            if "password_info" in k or "rax" in k or "rackspace" in k:
+            if 'rack' in k or "password_info" in k or "rax" in k or "rackspace" in k:
                 to_delete.append(k)
                 continue
             for watch_key, watch_list in protect.iteritems():
@@ -310,25 +311,29 @@ for stream_type, streams_by_len in patterns.iteritems():
             #print json.dumps(rawjson, sort_keys=True, indent=4)
 
         #print json.dumps(context, cls=DateTimeEncoder, sort_keys=True, index=4)
-    output.insert(0, {'time_map': context['_time_map']})
+
+    context_map = {'time_map': context['_time_map']}
+    for key in ['uuid', 'xuuid', 'v4', 'v6']:
+        context_map[key] = len(context.get(key, []))
+    output.insert(0, context_map)
 
     filename = "templates/%s_%d.json" % (stream_type, length)
     with open(filename, "w") as f:
         json.dump(output, f, cls=DateTimeEncoder, sort_keys=True, indent=4)
 
-    timemap = output[0]['time_map']
-    now = datetime.datetime.utcnow()
-    this_context = {}
-    for k, td in timemap.iteritems():
-        this_context[k] = now + td
-    for item in output[1:]:
-        now.time().replace(0, 0, 0, 0)
-        string = json.dumps(item, cls=DateTimeEncoder)
-        for k, v in this_context.iteritems():
-            string = string.replace(k, str(v))
-        x = json.loads(string)
-        print json.dumps(x, cls=DateTimeEncoder, sort_keys=True, indent=4)
-        sys.exit(1)
+    if 0:
+        timemap = output[0]['time_map']
+        now = datetime.datetime.utcnow()
+        this_context = {}
+        for k, td in timemap.iteritems():
+            this_context[k] = now + td
+        for item in output[1:]:
+            now.time().replace(0, 0, 0, 0)
+            string = json.dumps(item, cls=DateTimeEncoder)
+            for k, v in this_context.iteritems():
+                string = string.replace(k, str(v))
+            x = json.loads(string)
+            print json.dumps(x, cls=DateTimeEncoder, sort_keys=True, indent=4)
+            sys.exit(1)
 
-    sys.exit(1)
 cnx.close()
