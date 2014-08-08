@@ -274,7 +274,8 @@ def scrub(context, struct, parent):
         #print "Dict"
         to_delete = []
         for k, v in struct.iteritems():
-            if ('connection_info' in k or '_context_service_catalog' in k
+            if ('service_catalog' in k or 'connection_info' in k
+                or '_context_service_catalog' in k
                 or 'RAX' in k or 'rack' in k
                 or "password_info" in k
                 or "rax" in k or "rackspace" in k):
