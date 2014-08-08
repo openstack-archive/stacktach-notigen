@@ -239,15 +239,18 @@ regex_list = [(uuid_regex, "uuid", "[[[[UUID_%d]]]]"),
               ]
 
 protect = {"tenant_id": ["_context_project_id", "_context_project_name",
-                         "_context_tenant", "tenant_id", "project_id"],
+                         "_context_tenant", "tenant_id", "project_id",
+                         "project_name"],
            "user_id": ["_context_user", "_context_user_id",
-                        "_context_user_name", "user_id", "owner"],
+                        "_context_user_name", "user_id", "owner",
+                        "user_name", "image_user_id"],
            "display_name": ["display_name", "name", "display_description"],
            "host": ["host",],
            "hostname": ["hostname",],
            "node": ["node",],
            "reservation_id": ["reservation_id",],
            "image_name": ["image_name", ],
+           "device_name": ["devname", ],
            "publisher_id": ["publisher_id",]}
 
 
@@ -259,9 +262,10 @@ def scrub(context, struct, parent):
         for index, x in enumerate(struct):
             scrub(context, x, _replace_list(struct, index))
             if type(x) in [unicode, str]:
-                if 'rack' in x or 'rax' in x or 'rackspace' in x:
-                    # reverse insert order so we can safely delete later.
-                    to_delete.insert(0, index)
+                if ('RAX' in x or 'rack' in x or 'rax' in x
+                    or 'rackspace' in x):
+                        # reverse insert order so we can safely delete later.
+                        to_delete.insert(0, index)
 
         for index in to_delete:
             struct.pop(index)
@@ -270,9 +274,12 @@ def scrub(context, struct, parent):
         #print "Dict"
         to_delete = []
         for k, v in struct.iteritems():
-            if 'rack' in k or "password_info" in k or "rax" in k or "rackspace" in k:
-                to_delete.append(k)
-                continue
+            if ('connection_info' in k or '_context_service_catalog' in k
+                or 'RAX' in k or 'rack' in k
+                or "password_info" in k
+                or "rax" in k or "rackspace" in k):
+                    to_delete.append(k)
+                    continue
             for watch_key, watch_list in protect.iteritems():
                 if k in watch_list:
                     struct[k] = "[[[[%s]]]]" % watch_key
@@ -281,6 +288,7 @@ def scrub(context, struct, parent):
             scrub(context, k, _replace_dict_key(struct, v, k))
         for k in to_delete:
             del struct[k]
+
     elif type(struct) in [unicode, str]:
         #print "Str:", struct
         for regex, pkey, ptemplate in regex_list:
