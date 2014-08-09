@@ -25,7 +25,7 @@ class DateTimeEncoder(json.JSONEncoder):
         elif isinstance(obj, datetime.timedelta):
             encoded_object = (obj.days, obj.seconds, obj.microseconds)
         else:
-            encoded_object =json.JSONEncoder.default(self, obj)
+            encoded_object = json.JSONEncoder.default(self, obj)
         return encoded_object
 
 
@@ -154,12 +154,14 @@ operations = [
     'compute.instance.unrescue.start',
 ]
 
-patterns = {}  # {stream_type: {stream_length: first stream}}
+patterns = {}  # {stream_type: {stream_length: first stream seen like this}}
 for r in req:
     query = ("SELECT instance, stacktach_rawdata.when AS generated, "
              " event, json "
              "FROM stacktach_rawdata "
-             "WHERE request_id='%s'" % (r, ))
+             "WHERE request_id='%s' "
+             "ORDER BY stacktach_rawdata.when" % (r, ))
+
     cursor = cnx.cursor()
     cursor.execute(query)
     stream = []
@@ -173,10 +175,11 @@ for r in req:
     cursor.close()
     if not stream_type:
         continue
+
     pattern = patterns.get(stream_type, {})
     length = len(stream)
     if pattern.get(length) is not None:
-        continue  # seen this before ...
+        continue  # seen one like this before ...
     pattern[length] = stream
     patterns[stream_type] = pattern
 
@@ -238,6 +241,10 @@ regex_list = [(uuid_regex, "uuid", "[[[[UUID_%d]]]]"),
               (dt2_regex, "dt", "[[[[DT_%d]]]]"),
               ]
 
+# Many critical keys come under many similar names. None of which
+# we want in the template.
+
+# { common_name : list of aliases }
 protect = {"tenant_id": ["_context_project_id", "_context_project_name",
                          "_context_tenant", "tenant_id", "project_id",
                          "project_name"],
@@ -313,14 +320,26 @@ for stream_type, streams_by_len in patterns.iteritems():
     for length, stream in streams_by_len.iteritems():
         context = {'_time_map': {}}
         for when, uuid, event, rawjson in stream:
+            # All datetimes will be relative to the first event's timestamp.
             if not context.get('_start_time'):
                 context['_start_time'] = dateutil.parser.parse(rawjson['timestamp'])
             scrub(context, rawjson, None)
             output.append(rawjson)
-            #print json.dumps(rawjson, sort_keys=True, indent=4)
 
-        #print json.dumps(context, cls=DateTimeEncoder, sort_keys=True, index=4)
-
+    # output file is one large json array.
+    # [0] = context hints, such as
+    # {"time_map" : [
+    #   {"[[[[[DT_0]]]]": (days, seconds, microseconds)}, time delta
+    #   {"[[[[[DT_1]]]]": (days, seconds, microseconds)}, time delta
+    #  ],
+    #  "uuid": num   (number of unique UUID's needed)
+    #  "xuuid": num   (number of unique UUID's need with no dividers)
+    #  "v4": num    (number of IP.v4 addresses needed)
+    #  "v6": num    (number of IP.v6 addresses needed)
+    # }
+    # [1..N] = stream of event templates for this operation
+    # where N = the number in the filename foo.blah.NUM.json
+    # ... that many events in this stream.
     context_map = {'time_map': context['_time_map']}
     for key in ['uuid', 'xuuid', 'v4', 'v6']:
         context_map[key] = len(context.get(key, []))
