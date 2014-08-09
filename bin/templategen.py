@@ -326,28 +326,28 @@ for stream_type, streams_by_len in patterns.iteritems():
             scrub(context, rawjson, None)
             output.append(rawjson)
 
-    # output file is one large json array.
-    # [0] = context hints, such as
-    # {"time_map" : [
-    #   {"[[[[[DT_0]]]]": (days, seconds, microseconds)}, time delta
-    #   {"[[[[[DT_1]]]]": (days, seconds, microseconds)}, time delta
-    #  ],
-    #  "uuid": num   (number of unique UUID's needed)
-    #  "xuuid": num   (number of unique UUID's need with no dividers)
-    #  "v4": num    (number of IP.v4 addresses needed)
-    #  "v6": num    (number of IP.v6 addresses needed)
-    # }
-    # [1..N] = stream of event templates for this operation
-    # where N = the number in the filename foo.blah.NUM.json
-    # ... that many events in this stream.
-    context_map = {'time_map': context['_time_map']}
-    for key in ['uuid', 'xuuid', 'v4', 'v6']:
-        context_map[key] = len(context.get(key, []))
-    output.insert(0, context_map)
+        # output file is one large json array.
+        # [0] = context hints, such as
+        # {"time_map" : [
+        #   {"[[[[[DT_0]]]]": (days, seconds, microseconds)}, time delta
+        #   {"[[[[[DT_1]]]]": (days, seconds, microseconds)}, time delta
+        #  ],
+        #  "uuid": num   (number of unique UUID's needed)
+        #  "xuuid": num   (number of unique UUID's need with no dividers)
+        #  "v4": num    (number of IP.v4 addresses needed)
+        #  "v6": num    (number of IP.v6 addresses needed)
+        # }
+        # [1..N] = stream of event templates for this operation
+        # where N = the number in the filename foo.blah.NUM.json
+        # ... that many events in this stream.
+        context_map = {'time_map': context['_time_map']}
+        for key in ['uuid', 'xuuid', 'v4', 'v6']:
+            context_map[key] = len(context.get(key, []))
+        output.insert(0, context_map)
 
-    filename = "templates/%s_%d.json" % (stream_type, length)
-    with open(filename, "w") as f:
-        json.dump(output, f, cls=DateTimeEncoder, sort_keys=True, indent=4)
+        filename = "templates/%s_%d.json" % (stream_type, length)
+        with open(filename, "w") as f:
+            json.dump(output, f, cls=DateTimeEncoder, sort_keys=True, indent=4)
 
     if 0:
         timemap = output[0]['time_map']
