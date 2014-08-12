@@ -1,0 +1,1189 @@
+[
+    {
+        "time_map": {
+            "[[[[DT_0]]]]": [
+                -1, 
+                76552, 
+                386435
+            ], 
+            "[[[[DT_10]]]]": [
+                0, 
+                1, 
+                143029
+            ], 
+            "[[[[DT_11]]]]": [
+                0, 
+                4, 
+                386435
+            ], 
+            "[[[[DT_12]]]]": [
+                0, 
+                4, 
+                868336
+            ], 
+            "[[[[DT_13]]]]": [
+                0, 
+                15437, 
+                386435
+            ], 
+            "[[[[DT_14]]]]": [
+                0, 
+                15437, 
+                590032
+            ], 
+            "[[[[DT_15]]]]": [
+                -249, 
+                28825, 
+                386435
+            ], 
+            "[[[[DT_16]]]]": [
+                -249, 
+                33484, 
+                386435
+            ], 
+            "[[[[DT_17]]]]": [
+                -73, 
+                73334, 
+                386435
+            ], 
+            "[[[[DT_18]]]]": [
+                -249, 
+                33946, 
+                386435
+            ], 
+            "[[[[DT_19]]]]": [
+                -249, 
+                33485, 
+                386435
+            ], 
+            "[[[[DT_1]]]]": [
+                -249, 
+                33480, 
+                386435
+            ], 
+            "[[[[DT_20]]]]": [
+                0, 
+                4, 
+                794786
+            ], 
+            "[[[[DT_21]]]]": [
+                -249, 
+                33480, 
+                386435
+            ], 
+            "[[[[DT_22]]]]": [
+                0, 
+                15437, 
+                662105
+            ], 
+            "[[[[DT_2]]]]": [
+                -249, 
+                33946, 
+                386435
+            ], 
+            "[[[[DT_3]]]]": [
+                -1, 
+                86399, 
+                386435
+            ], 
+            "[[[[DT_4]]]]": [
+                0, 
+                0, 
+                0
+            ], 
+            "[[[[DT_5]]]]": [
+                -1, 
+                86397, 
+                952793
+            ], 
+            "[[[[DT_6]]]]": [
+                0, 
+                0, 
+                225424
+            ], 
+            "[[[[DT_7]]]]": [
+                0, 
+                0, 
+                386435
+            ], 
+            "[[[[DT_8]]]]": [
+                0, 
+                0, 
+                501351
+            ], 
+            "[[[[DT_9]]]]": [
+                0, 
+                1, 
+                106502
+            ]
+        }, 
+        "uuid": 18, 
+        "v4": 15, 
+        "v6": 1, 
+        "xuuid": 9
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_1]]]]", 
+        "event_type": "compute.instance.update", 
+        "message_id": "[[[[UUID_5]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "audit_period_beginning": "[[[[DT_0]]]]", 
+            "audit_period_ending": "[[[[DT_3]]]]", 
+            "availability_zone": null, 
+            "bandwidth": {}, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": 160, 
+                "min_ram": 512, 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_1]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "new_task_state": "image_snapshot_pending", 
+            "node": "[[[[node]]]]", 
+            "old_state": "active", 
+            "old_task_state": null, 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "image_snapshot_pending", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_4]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_2]]]]", 
+        "event_type": "compute.instance.update", 
+        "message_id": "[[[[UUID_6]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "audit_period_beginning": "[[[[DT_0]]]]", 
+            "audit_period_ending": "[[[[DT_3]]]]", 
+            "availability_zone": null, 
+            "bandwidth": {
+                "private": {
+                    "bw_in": 24000033, 
+                    "bw_out": 231190044
+                }, 
+                "public": {
+                    "bw_in": 113516780, 
+                    "bw_out": 74190461
+                }
+            }, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": "160", 
+                "min_ram": "512", 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_3]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "new_task_state": "image_snapshot_pending", 
+            "node": "[[[[node]]]]", 
+            "old_state": "active", 
+            "old_task_state": null, 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "image_snapshot_pending", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_6]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_3]]]]", 
+        "event_type": "compute.instance.update", 
+        "message_id": "[[[[UUID_7]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "audit_period_beginning": "[[[[DT_0]]]]", 
+            "audit_period_ending": "[[[[DT_7]]]]", 
+            "availability_zone": null, 
+            "bandwidth": {
+                "private": {
+                    "bw_in": 24000033, 
+                    "bw_out": 231190044
+                }, 
+                "public": {
+                    "bw_in": 113516780, 
+                    "bw_out": 74190461
+                }
+            }, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": "160", 
+                "min_ram": "512", 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_4]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "new_task_state": "image_snapshot", 
+            "node": "[[[[node]]]]", 
+            "old_state": "active", 
+            "old_task_state": "image_snapshot_pending", 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "image_snapshot", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_8]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default", 
+            "admin"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_4]]]]", 
+        "event_type": "compute.instance.update", 
+        "message_id": "[[[[UUID_8]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "audit_period_beginning": "[[[[DT_0]]]]", 
+            "audit_period_ending": "[[[[DT_7]]]]", 
+            "availability_zone": null, 
+            "bandwidth": {
+                "private": {
+                    "bw_in": 24000033, 
+                    "bw_out": 231190044
+                }, 
+                "public": {
+                    "bw_in": 113516780, 
+                    "bw_out": 74190461
+                }
+            }, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": "160", 
+                "min_ram": "512", 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_4]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "new_task_state": "image_snapshot", 
+            "node": "[[[[node]]]]", 
+            "old_state": null, 
+            "old_task_state": null, 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "image_snapshot", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_9]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": true, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default", 
+            "admin"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_5]]]]", 
+        "event_type": "compute.instance.snapshot.start", 
+        "message_id": "[[[[UUID_9]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "availability_zone": null, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": "160", 
+                "min_ram": "512", 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_4]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "node": "[[[[node]]]]", 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "image_snapshot", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_10]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default", 
+            "admin"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_6]]]]", 
+        "event_type": "compute.instance.update", 
+        "message_id": "[[[[UUID_10]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "audit_period_beginning": "[[[[DT_0]]]]", 
+            "audit_period_ending": "[[[[DT_11]]]]", 
+            "availability_zone": null, 
+            "bandwidth": {
+                "private": {
+                    "bw_in": 24000033, 
+                    "bw_out": 231190044
+                }, 
+                "public": {
+                    "bw_in": 113516780, 
+                    "bw_out": 74190461
+                }
+            }, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": "160", 
+                "min_ram": "512", 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_4]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "new_task_state": "image_pending_upload", 
+            "node": "[[[[node]]]]", 
+            "old_state": "active", 
+            "old_task_state": "image_snapshot", 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "image_pending_upload", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_12]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default", 
+            "admin"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_7]]]]", 
+        "event_type": "compute.instance.update", 
+        "message_id": "[[[[UUID_11]]]]", 
+        "payload": {
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "architecture": null, 
+            "audit_period_beginning": "[[[[DT_0]]]]", 
+            "audit_period_ending": "[[[[DT_13]]]]", 
+            "availability_zone": null, 
+            "bandwidth": {
+                "private": {
+                    "bw_in": 38122060, 
+                    "bw_out": 446086058
+                }, 
+                "public": {
+                    "bw_in": 162245937, 
+                    "bw_out": 102707053
+                }
+            }, 
+            "created_at": "[[[[DT_1]]]]", 
+            "deleted_at": "", 
+            "disk_gb": 160, 
+            "display_name": "[[[[display_name]]]]", 
+            "ephemeral_gb": 0, 
+            "host": "[[[[host]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "image_meta": {
+                "auto_disk_config": "True", 
+                "base_image_ref": "[[[[UUID_3]]]]", 
+                "container_format": "ovf", 
+                "disk_format": "vhd", 
+                "image_type": "snapshot", 
+                "instance_type_ephemeral_gb": "0", 
+                "instance_type_flavorid": "5", 
+                "instance_type_id": "5", 
+                "instance_type_memory_mb": "4096", 
+                "instance_type_name": "4GB Standard Instance", 
+                "instance_type_root_gb": "160", 
+                "instance_type_rxtx_factor": "10", 
+                "instance_type_swap": "2048", 
+                "instance_type_vcpu_weight": "14", 
+                "instance_type_vcpus": "2", 
+                "instance_uuid": "[[[[UUID_4]]]]", 
+                "min_disk": "160", 
+                "min_ram": "512", 
+                "org.openstack__1__architecture": "x64", 
+                "org.openstack__1__os_distro": "org.centos", 
+                "org.openstack__1__os_version": "6.4", 
+                "os_distro": "centos", 
+                "os_type": "linux", 
+                "user_id": "[[[[user_id]]]]"
+            }, 
+            "image_ref_url": "http://[[[[V4_4]]]]:9292/images/[[[[UUID_2]]]]", 
+            "instance_flavor_id": "5", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "instance_type": "4GB Standard Instance", 
+            "instance_type_id": 5, 
+            "kernel_id": "", 
+            "launched_at": "[[[[DT_2]]]]", 
+            "memory_mb": 4096, 
+            "metadata": {}, 
+            "new_task_state": null, 
+            "node": "[[[[node]]]]", 
+            "old_state": "active", 
+            "old_task_state": "image_pending_upload", 
+            "os_type": "linux", 
+            "ramdisk_id": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "root_gb": 160, 
+            "state": "active", 
+            "state_description": "", 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "terminated_at": "", 
+            "user_id": "[[[[user_id]]]]", 
+            "vcpus": 2
+        }, 
+        "priority": "INFO", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_14]]]]"
+    }, 
+    {
+        "_context_auth_token": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_instance_lock_checked": false, 
+        "_context_is_admin": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_quota_class": null, 
+        "_context_read_deleted": "no", 
+        "_context_remote_address": "[[[[V4_2]]]]", 
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_roles": [
+            "checkmate", 
+            "identity:user-admin", 
+            "object-store:default", 
+            "compute:default", 
+            "admin"
+        ], 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_context_user": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]", 
+        "_unique_id": "[[[[XUUID_8]]]]", 
+        "event_type": "snapshot_instance", 
+        "message_id": "[[[[UUID_17]]]]", 
+        "payload": {
+            "args": {
+                "context": {
+                    "_read_deleted": "no", 
+                    "auth_token": "[[[[XUUID_0]]]]", 
+                    "glance_api_servers": null, 
+                    "instance_lock_checked": false, 
+                    "is_admin": false, 
+                    "project_id": "[[[[tenant_id]]]]", 
+                    "project_name": "[[[[tenant_id]]]]", 
+                    "quota_class": null, 
+                    "remote_address": "[[[[V4_2]]]]", 
+                    "request_id": "req-[[[[UUID_0]]]]", 
+                    "roles": [
+                        "checkmate", 
+                        "identity:user-admin", 
+                        "object-store:default", 
+                        "compute:default", 
+                        "admin"
+                    ], 
+                    "timestamp": "[[[[DT_5]]]]", 
+                    "user_id": "[[[[user_id]]]]", 
+                    "user_name": "[[[[user_id]]]]"
+                }, 
+                "image_id": "[[[[UUID_16]]]]", 
+                "instance": {
+                    "access_ip_v4": "[[[[V4_0]]]]", 
+                    "access_ip_v6": "[[[[V6_0]]]]", 
+                    "architecture": null, 
+                    "auto_disk_config": true, 
+                    "availability_zone": null, 
+                    "cell_name": null, 
+                    "cleaned": false, 
+                    "config_drive": "", 
+                    "created_at": "[[[[DT_21]]]]", 
+                    "default_ephemeral_device": null, 
+                    "default_swap_device": null, 
+                    "deleted": false, 
+                    "deleted_at": null, 
+                    "disable_terminate": false, 
+                    "display_description": "[[[[display_name]]]]", 
+                    "display_name": "[[[[display_name]]]]", 
+                    "ephemeral_gb": 0, 
+                    "ephemeral_key_uuid": null, 
+                    "host": "[[[[host]]]]", 
+                    "hostname": "[[[[hostname]]]]", 
+                    "id": 314908, 
+                    "image_ref": "[[[[UUID_2]]]]", 
+                    "info_cache": {
+                        "created_at": "[[[[DT_16]]]]", 
+                        "deleted": false, 
+                        "deleted_at": null, 
+                        "instance_uuid": "[[[[UUID_1]]]]", 
+                        "network_info": [
+                            {
+                                "address": "BC:76:4E:08:7B:A5", 
+                                "devname": "[[[[device_name]]]]", 
+                                "id": "[[[[UUID_13]]]]", 
+                                "meta": {}, 
+                                "network": {
+                                    "bridge": "publicnet", 
+                                    "id": "[[[[UUID_12]]]]", 
+                                    "label": "public", 
+                                    "meta": {
+                                        "injected": false, 
+                                        "nvp_managed": false, 
+                                        "tenant_id": "[[[[tenant_id]]]]"
+                                    }, 
+                                    "subnets": [
+                                        {
+                                            "cidr": "2a00:1a48:7806:116::/64", 
+                                            "dns": [
+                                                {
+                                                    "address": "[[[[V4_5]]]]", 
+                                                    "meta": {}, 
+                                                    "type": "dns", 
+                                                    "version": 4
+                                                }, 
+                                                {
+                                                    "address": "[[[[V4_6]]]]", 
+                                                    "meta": {}, 
+                                                    "type": "dns", 
+                                                    "version": 4
+                                                }
+                                            ], 
+                                            "gateway": {
+                                                "address": "fe80::def", 
+                                                "meta": {}, 
+                                                "type": "gateway", 
+                                                "version": 6
+                                            }, 
+                                            "ips": [
+                                                {
+                                                    "address": "[[[[V6_0]]]]", 
+                                                    "floating_ips": [], 
+                                                    "meta": {}, 
+                                                    "type": "fixed", 
+                                                    "version": 6
+                                                }
+                                            ], 
+                                            "meta": {}, 
+                                            "routes": [], 
+                                            "version": 6
+                                        }, 
+                                        {
+                                            "cidr": "[[[[V4_9]]]]/24", 
+                                            "dns": [
+                                                {
+                                                    "address": "[[[[V4_6]]]]", 
+                                                    "meta": {}, 
+                                                    "type": "dns", 
+                                                    "version": 4
+                                                }, 
+                                                {
+                                                    "address": "[[[[V4_5]]]]", 
+                                                    "meta": {}, 
+                                                    "type": "dns", 
+                                                    "version": 4
+                                                }
+                                            ], 
+                                            "gateway": {
+                                                "address": "[[[[V4_8]]]]", 
+                                                "meta": {}, 
+                                                "type": "gateway", 
+                                                "version": 4
+                                            }, 
+                                            "ips": [
+                                                {
+                                                    "address": "[[[[V4_0]]]]", 
+                                                    "floating_ips": [], 
+                                                    "meta": {}, 
+                                                    "type": "fixed", 
+                                                    "version": 4
+                                                }
+                                            ], 
+                                            "meta": {}, 
+                                            "routes": [
+                                                {
+                                                    "cidr": "[[[[V4_7]]]]/0", 
+                                                    "gateway": {
+                                                        "address": "[[[[V4_8]]]]", 
+                                                        "meta": {}, 
+                                                        "type": "nexthop", 
+                                                        "version": 4
+                                                    }, 
+                                                    "interface": null, 
+                                                    "meta": {}
+                                                }
+                                            ], 
+                                            "version": 4
+                                        }
+                                    ]
+                                }, 
+                                "ovs_interfaceid": null, 
+                                "qbg_params": null, 
+                                "qbh_params": null, 
+                                "type": null
+                            }, 
+                            {
+                                "address": "BC:76:4E:08:44:75", 
+                                "devname": "[[[[device_name]]]]", 
+                                "id": "[[[[UUID_15]]]]", 
+                                "meta": {}, 
+                                "network": {
+                                    "bridge": "servicenet", 
+                                    "id": "[[[[UUID_14]]]]", 
+                                    "label": "private", 
+                                    "meta": {
+                                        "injected": false, 
+                                        "nvp_managed": false, 
+                                        "tenant_id": "[[[[tenant_id]]]]"
+                                    }, 
+                                    "subnets": [
+                                        {
+                                            "cidr": "[[[[V4_14]]]]/18", 
+                                            "dns": [
+                                                {
+                                                    "address": "[[[[V4_5]]]]", 
+                                                    "meta": {}, 
+                                                    "type": "dns", 
+                                                    "version": 4
+                                                }, 
+                                                {
+                                                    "address": "[[[[V4_6]]]]", 
+                                                    "meta": {}, 
+                                                    "type": "dns", 
+                                                    "version": 4
+                                                }
+                                            ], 
+                                            "gateway": {
+                                                "address": null, 
+                                                "meta": {}, 
+                                                "type": "gateway", 
+                                                "version": null
+                                            }, 
+                                            "ips": [
+                                                {
+                                                    "address": "[[[[V4_10]]]]", 
+                                                    "floating_ips": [], 
+                                                    "meta": {}, 
+                                                    "type": "fixed", 
+                                                    "version": 4
+                                                }
+                                            ], 
+                                            "meta": {}, 
+                                            "routes": [
+                                                {
+                                                    "cidr": "[[[[V4_11]]]]/12", 
+                                                    "gateway": {
+                                                        "address": "[[[[V4_12]]]]", 
+                                                        "meta": {}, 
+                                                        "type": "nexthop", 
+                                                        "version": 4
+                                                    }, 
+                                                    "interface": null, 
+                                                    "meta": {}
+                                                }, 
+                                                {
+                                                    "cidr": "[[[[V4_13]]]]/12", 
+                                                    "gateway": {
+                                                        "address": "[[[[V4_12]]]]", 
+                                                        "meta": {}, 
+                                                        "type": "nexthop", 
+                                                        "version": 4
+                                                    }, 
+                                                    "interface": null, 
+                                                    "meta": {}
+                                                }
+                                            ], 
+                                            "version": 4
+                                        }
+                                    ]
+                                }, 
+                                "ovs_interfaceid": null, 
+                                "qbg_params": null, 
+                                "qbh_params": null, 
+                                "type": null
+                            }
+                        ], 
+                        "updated_at": "[[[[DT_17]]]]"
+                    }, 
+                    "instance_type_id": 5, 
+                    "kernel_id": "", 
+                    "key_data": null, 
+                    "key_name": null, 
+                    "launch_index": 0, 
+                    "launched_at": "[[[[DT_18]]]]", 
+                    "launched_on": "c-10-21-21-63", 
+                    "locked": false, 
+                    "locked_by": null, 
+                    "memory_mb": 4096, 
+                    "metadata": {}, 
+                    "name": "instance-[[[[UUID_1]]]]", 
+                    "node": "[[[[node]]]]", 
+                    "os_type": "linux", 
+                    "power_state": 1, 
+                    "progress": 100, 
+                    "project_id": "[[[[tenant_id]]]]", 
+                    "ramdisk_id": "", 
+                    "reservation_id": "[[[[reservation_id]]]]", 
+                    "root_device_name": "/dev/xvda", 
+                    "root_gb": 160, 
+                    "scheduled_at": "[[[[DT_19]]]]", 
+                    "security_groups": {
+                        "objects": [
+                            {
+                                "created_at": "[[[[DT_15]]]]", 
+                                "deleted": false, 
+                                "deleted_at": null, 
+                                "description": "default", 
+                                "id": 1486, 
+                                "name": "[[[[display_name]]]]", 
+                                "project_id": "[[[[tenant_id]]]]", 
+                                "updated_at": null, 
+                                "user_id": "[[[[user_id]]]]"
+                            }
+                        ]
+                    }, 
+                    "shutdown_terminate": false, 
+                    "system_metadata": {
+                        "image_auto_disk_config": "True", 
+                        "image_base_image_ref": "[[[[UUID_3]]]]", 
+                        "image_container_format": "ovf", 
+                        "image_disk_format": "vhd", 
+                        "image_image_type": "snapshot", 
+                        "image_instance_type_ephemeral_gb": "0", 
+                        "image_instance_type_flavorid": "5", 
+                        "image_instance_type_id": "5", 
+                        "image_instance_type_memory_mb": "4096", 
+                        "image_instance_type_name": "4GB Standard Instance", 
+                        "image_instance_type_root_gb": "160", 
+                        "image_instance_type_rxtx_factor": "10", 
+                        "image_instance_type_swap": "2048", 
+                        "image_instance_type_vcpu_weight": "14", 
+                        "image_instance_type_vcpus": "2", 
+                        "image_instance_uuid": "[[[[UUID_4]]]]", 
+                        "image_min_disk": "160", 
+                        "image_min_ram": "512", 
+                        "image_org.openstack__1__architecture": "x64", 
+                        "image_org.openstack__1__os_distro": "org.centos", 
+                        "image_org.openstack__1__os_version": "6.4", 
+                        "image_os_distro": "centos", 
+                        "image_os_type": "linux", 
+                        "image_user_id": "[[[[user_id]]]]", 
+                        "instance_type_ephemeral_gb": "0", 
+                        "instance_type_flavorid": "5", 
+                        "instance_type_id": "5", 
+                        "instance_type_memory_mb": "4096", 
+                        "instance_type_name": "4GB Standard Instance", 
+                        "instance_type_root_gb": "160", 
+                        "instance_type_rxtx_factor": "400", 
+                        "instance_type_swap": "2048", 
+                        "instance_type_vcpu_weight": "14", 
+                        "instance_type_vcpus": "2"
+                    }, 
+                    "task_state": "image_pending_upload", 
+                    "terminated_at": null, 
+                    "updated_at": "[[[[DT_20]]]]", 
+                    "user_data": null, 
+                    "user_id": "[[[[user_id]]]]", 
+                    "uuid": "[[[[UUID_1]]]]", 
+                    "vcpus": 2, 
+                    "vm_mode": "xen", 
+                    "vm_state": "active"
+                }, 
+                "self": null
+            }, 
+            "exception": {
+                "kwargs": {
+                    "code": 500
+                }
+            }
+        }, 
+        "priority": "ERROR", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "timestamp": "[[[[DT_22]]]]"
+    }
+]

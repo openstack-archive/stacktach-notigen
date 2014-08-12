@@ -20,11 +20,15 @@ Built from work done in https://github.com/SandyWalsh/twobillion
 
 import datetime
 import heapq
+import json
 import operator
+import os
+import os.path
 import uuid as uuidlib
 import random
 import sys
 import time
+import uuid
 
 
 COMPUTE_EVENTS = [
@@ -76,7 +80,8 @@ API_NODES = ['api.server.%02d' % x for x in xrange(10)]
 
 
 class EventGenerator(object):
-    def __init__(self, operations_per_minute=1000):
+    def __init__(self, operations_per_minute=1000, exists_hours=1):
+        self.exists_hours = exists_hours  # num hours between .exists
         self.instances = {}  # { uuid: compute_node }
 
         # Many actions can be performed concurrently.
@@ -110,6 +115,122 @@ class EventGenerator(object):
 
         self.last_exists = now  # When were last .exists sent?
 
+    def move_to_next_tick(self, now):
+        return now + datetime.timedelta(milliseconds=self.millisecond_per_tick)
+
+
+class TemplateEventGenerator(EventGenerator):
+    def __init__(self, template_dir, operations_per_minute=1000,
+                 exists_hours=24):
+        super(TemplateEventGenerator, self).__init__(operations_per_minute,
+                                                     exists_hours)
+
+        # Load all the templates ...
+        template_filenames = [f for f in os.listdir(template_dir)
+                              if os.path.isfile(os.path.join(
+                                               template_dir, f)) and
+                                 f[-5:] == ".json"]
+
+        self.templates = []
+        for filename in template_filenames:
+            with open(os.path.join(template_dir, filename), "r") as f:
+                print filename
+                template = json.load(f)
+                # Keep it as a raw string to make replacements easier ...
+                raw = json.dumps(template[1:], sort_keys=True, indent=4)
+                self.templates.append((filename, template[0], raw))
+
+    def generate(self, now):
+        self._add_new_sequence(now)
+        return []  # self._get_ready_events(now)
+
+    def _add_new_sequence(self, now):
+        """Add a new operation to the queue.
+        This is the entire sequence of events going into
+        the future. They will be interwoven with other
+        future events and pumped out in proper (interleaving)
+        order."""
+        if now >= self.tick:
+            context, sequence = self._get_sequence(now)
+            for idx, when_event in enumerate(sequence):
+                when, event = when_event
+                print when, event['event_type']
+                # (when, is_first_event, is_last_event)
+                heapq.heappush(self.next_events,
+                                    (when, idx==0, idx==len(sequence)-1))
+            print "------------------------------"
+            self.tick = self.move_to_next_tick(now)
+        return now
+
+    def _get_sequence(self, now):
+        """Grab a template and make a sequence from it.
+        """
+        sequence = []
+
+        filename, context_hints, template = random.choice(self.templates)
+        print "Using", filename
+        context = {}
+        time_map = context_hints['time_map']
+        for key, values in time_map.iteritems():
+            context[key] = str(now + datetime.timedelta(days=values[0],
+                                                    seconds=values[1],
+                                                    milliseconds=values[2]))
+        for num in range(context_hints['uuid']):
+            context["[[[[UUID_%d]]]]" % num] = str(uuid.uuid4())
+
+        for num in range(context_hints['xuuid']):
+            u = str(uuid.uuid4()).replace("-", "")
+            context["[[[[XUUID_%d]]]]" % num] = u
+
+        for num in range(context_hints['v4']):
+            nums = [127 + random.randrange(127) for x in range(4)]
+            v4 = "%d.%d.%d.%d" % tuple(nums)
+            context["[[[[V4_%d]]]]" % num] = v4
+
+        for num in range(context_hints['v6']):
+            res = [hex(random.randint(0, 65535))[2:].zfill(4)
+                        for i in range(0, 8)]
+            v6 =  ":".join(res)
+            context["[[[[V6_%d]]]]" % num] = v6
+
+        # The rest of the context ...
+        context["[[[[tenant_id]]]]"] = str(100000 + random.randrange(899999))
+        context["[[[[user_id]]]]"] = str(100000 + random.randrange(899999))
+        context["[[[[display_name]]]]"] = "Instance_%d" % random.randrange(
+                                                                899999)
+        context["[[[[host]]]]"] = "host-%d" % random.randrange(899999)
+        context["[[[[hostname]]]]"] = "server-%d" % random.randrange(899999)
+        context["[[[[node]]]]"] = "node-%d" % random.randrange(899999)
+        context["[[[[reservation_id]]]]"] = "res-%d" % random.randrange(899999)
+        context["[[[[image_name]]]]"] = "image-%d" % random.randrange(899999)
+        context["[[[[device_name]]]]"] = "device-%d" % random.randrange(899999)
+        context["[[[[publisher_id]]]]"] = "publisher-%d" % random.randrange(
+                                                                899999)
+
+        for key, value in context.iteritems():
+            template = template.replace(key, value)
+
+        struct = json.loads(template)
+
+        instance_id = None
+        for event in struct:
+            inst_id = event['payload'].get('instance_id')
+            if inst_id:
+                if instance_id and instance_id != inst_id:
+                    print "changing instance id", instance_id, inst_id
+                instance_id = inst_id
+            sequence.append((event['timestamp'], event))
+
+        context['instance_id'] = instance_id
+        return context, sorted(sequence)
+
+
+class TinyEventGenerator(EventGenerator):
+    # Generates OpenStack-like events without event templates.
+    # The event payloads are not complete and the event sequences
+    # are mostly made up.
+    # If you have a StackTach.v2 deployment, you can use the
+    # template generator in ./bin to make your own templates.
     def generate(self, now):
         self._add_new_sequence(now)
         events = self._get_ready_events(now)
@@ -118,8 +239,6 @@ class EventGenerator(object):
             event['message_id'] = str(uuidlib.uuid4())
         return events
 
-    def move_to_next_tick(self, now):
-        return now + datetime.timedelta(milliseconds=self.millisecond_per_tick)
 
     def _add_new_sequence(self, now):
         """Add a new operation to the queue.
@@ -170,16 +289,33 @@ class EventGenerator(object):
             #print "%s %40s U:%4s" % (' ' * 20, event['event_type'], uuid[-4:])
             ready.append(event)
 
-        # Send .exists every hour for all active instances.
-        if (now - self.last_exists).seconds > 60 * 60:
-            self.last_exists = now
+        # Send .exists every N hours for all active instances.
+        # Ensure the datetime of the .exists notification is HH:MM = X:00
+        # so we have regular blocks. In the situation we were doing
+        # End-of-Day .exists, we'd want the datetime to be 00:00
+        # like Nova does by default.
 
-            for instance in self.instances_in_use:
-                base = {'uuid': instance}
-                events, now = self._event(now + datetime.timedelta(seconds = 1),
-                                         base, "exists_node",
-                                         "compute.instance.exists")
-                ready.extend(events)
+        if now.minute < self.last_exists.minute:
+            # Minute rollover occured.
+            if (now - self.last_exists).seconds > (self.exists_hours*3600):
+                flattened = now.replace(minute=0, second=0, microsecond=0)
+                if self.exists_hours > 23:
+                    flattened = now.replace(hour=0, minute=0, second=0,
+                                            microsecond=0)
+
+                self.last_exists = now
+
+                for instance in self.instances_in_use:
+                    audit_period_start = flattened - datetime.timedelta(
+                                            hours=self.exists_hours)
+                    audit_period_end = flattened
+                    base = {'uuid': instance,
+                            'audit_period_start': audit_period_start,
+                            'audit_period_end': audit_period_end}
+                    events, now = self._event(now,
+                                             base, "exists_node",
+                                             "compute.instance.exists")
+                    ready.extend(events)
 
         return ready
 
@@ -324,7 +460,7 @@ if __name__ == '__main__':
     # The lower the ops/minute, the longer it will
     # take to get N events. This is useful for getting
     # .exists generated (hourly).
-    g = EventGenerator(1)
+    g = TemplateEventGenerator("templates", 1)
     now = datetime.datetime.utcnow()
     start = now
     nevents = 0
