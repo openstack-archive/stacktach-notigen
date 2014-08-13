@@ -18,6 +18,17 @@ import mysql.connector
 import notification_utils as nu
 
 
+class DateTimeEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, datetime.datetime):
+            encoded_object = list(obj.timetuple())[0:7]
+        elif isinstance(obj, datetime.timedelta):
+            encoded_object = (obj.days, obj.seconds, obj.microseconds)
+        else:
+            encoded_object = json.JSONEncoder.default(self, obj)
+        return encoded_object
+
+
 def get_all_events(cnx, date_range, next_range):
     # Get all the events (including EOD .exists) for a day
 
@@ -303,10 +314,9 @@ def scrub(context, struct, parent):
                     now = dateutil.parser.parse(original)
                     time_map[ptemplate % index] = now - start
 
-
 for stream_type, streams_by_len in patterns.iteritems():
-    output = []
     for length, stream in streams_by_len.iteritems():
+        output = []
         context = {'_time_map': {}}
         for when, uuid, event, rawjson in stream:
             # All datetimes will be relative to the first event's timestamp.
@@ -336,7 +346,7 @@ for stream_type, streams_by_len in patterns.iteritems():
 
         filename = "templates/%s_%d.json" % (stream_type, length)
         with open(filename, "w") as f:
-            json.dump(output, f, cls=DateTimeEncoder, sort_keys=True, indent=4)
+            json.dump(output, f, cls=DateTimeEncoder, indent=4)
 
     if 0:
         timemap = output[0]['time_map']
@@ -352,5 +362,41 @@ for stream_type, streams_by_len in patterns.iteritems():
             x = json.loads(string)
             print json.dumps(x, cls=DateTimeEncoder, sort_keys=True, indent=4)
             sys.exit(1)
+
+query = ("SELECT json "
+         "FROM stacktach_rawdata "
+         "WHERE event='compute.instance.exists' AND "
+         "      stacktach_rawdata.when BETWEEN %f AND %f " % date_range)
+
+cursor = cnx.cursor()
+cursor.execute(query)
+got = False
+for rawjson, in cursor:
+    if got:
+        continue
+    queue, full = json.loads(rawjson)
+    payload = full['payload']
+    if full['event_type'] == 'compute.instance.exists':
+        astart = dateutil.parser.parse(payload['audit_period_beginning'])
+        aend = dateutil.parser.parse(payload['audit_period_ending'])
+        if astart.time() != datetime.time.min:
+            continue
+        if aend.time() != datetime.time.min:
+            continue
+
+        context = {'_time_map': {},
+                   '_start_time': dateutil.parser.parse(full['timestamp'])}
+        scrub(context, full, None)
+
+        context_map = {'time_map': context['_time_map']}
+        for key in ['uuid', 'xuuid', 'v4', 'v6']:
+            context_map[key] = len(context.get(key, []))
+
+        output = [context_map, full]
+        filename = "templates/eod_exists.json"
+        with open(filename, "w") as f:
+            json.dump(output, f, cls=DateTimeEncoder, indent=4)
+        got = True
+cursor.close()
 
 cnx.close()

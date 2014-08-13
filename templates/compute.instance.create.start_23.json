@@ -1,62 +1,62 @@
 [
     {
         "xuuid": 26, 
-        "v4": 5, 
+        "v4": 3, 
         "time_map": {
             "[[[[DT_9]]]]": [
                 0, 
                 0, 
-                385281
+                304764
             ], 
             "[[[[DT_5]]]]": [
                 -4, 
-                57500, 
-                194870
+                9746, 
+                922539
             ], 
             "[[[[DT_17]]]]": [
                 0, 
                 1, 
-                794583
+                729437
             ], 
             "[[[[DT_30]]]]": [
                 0, 
-                18, 
-                457574
+                26, 
+                922539
             ], 
             "[[[[DT_32]]]]": [
                 0, 
-                23, 
-                233107
+                31, 
+                922539
             ], 
             "[[[[DT_23]]]]": [
                 0, 
                 3, 
-                194870
+                14664
             ], 
             "[[[[DT_16]]]]": [
                 0, 
                 1, 
-                513990
+                566230
             ], 
             "[[[[DT_36]]]]": [
                 0, 
-                51, 
-                194870
+                42, 
+                922539
             ], 
             "[[[[DT_41]]]]": [
                 0, 
-                52, 
-                346168
+                3699, 
+                452786
             ], 
             "[[[[DT_39]]]]": [
                 0, 
-                52, 
-                194870
+                3698, 
+                484433
             ], 
             "[[[[DT_20]]]]": [
                 0, 
                 2, 
-                194870
+                147753
             ], 
             "[[[[DT_2]]]]": [
                 0, 
@@ -66,163 +66,163 @@
             "[[[[DT_15]]]]": [
                 0, 
                 1, 
-                194870
+                402451
             ], 
             "[[[[DT_31]]]]": [
                 0, 
-                23, 
-                194870
+                27, 
+                478555
             ], 
             "[[[[DT_7]]]]": [
                 -1, 
                 86399, 
-                964592
+                965796
             ], 
             "[[[[DT_21]]]]": [
                 0, 
                 2, 
-                346196
+                442202
             ], 
             "[[[[DT_11]]]]": [
                 0, 
                 0, 
-                890205
+                804545
             ], 
             "[[[[DT_3]]]]": [
                 -1, 
                 86399, 
-                791127
+                805827
             ], 
             "[[[[DT_27]]]]": [
                 0, 
-                5, 
-                490444
+                12, 
+                649628
             ], 
             "[[[[DT_8]]]]": [
                 -1, 
                 86399, 
-                928366
+                938301
             ], 
             "[[[[DT_29]]]]": [
                 0, 
-                18, 
-                194870
+                12, 
+                959742
             ], 
             "[[[[DT_40]]]]": [
                 0, 
-                52, 
-                313962
+                3698, 
+                657733
             ], 
             "[[[[DT_14]]]]": [
                 0, 
                 1, 
-                363064
+                254607
             ], 
             "[[[[DT_10]]]]": [
                 0, 
                 0, 
-                783281
+                692348
             ], 
             "[[[[DT_24]]]]": [
                 0, 
-                3, 
-                219544
+                8, 
+                922539
             ], 
             "[[[[DT_35]]]]": [
                 0, 
-                29, 
-                670494
+                33, 
+                286604
             ], 
             "[[[[DT_4]]]]": [
                 -88, 
-                58656, 
-                194870
+                17631, 
+                922539
             ], 
             "[[[[DT_22]]]]": [
                 0, 
                 2, 
-                602928
+                922539
             ], 
             "[[[[DT_1]]]]": [
                 -1, 
                 86399, 
-                194870
+                922539
             ], 
             "[[[[DT_13]]]]": [
                 0, 
                 1, 
-                100633
+                13299
             ], 
             "[[[[DT_25]]]]": [
                 0, 
-                5, 
-                194870
+                9, 
+                368346
             ], 
             "[[[[DT_34]]]]": [
                 0, 
-                29, 
-                194870
+                32, 
+                922539
             ], 
             "[[[[DT_6]]]]": [
-                -572, 
-                20893, 
-                194870
+                -1, 
+                27064, 
+                922539
             ], 
             "[[[[DT_33]]]]": [
                 0, 
-                23, 
-                711336
+                32, 
+                816399
             ], 
             "[[[[DT_12]]]]": [
                 0, 
                 0, 
-                194870
+                922539
             ], 
             "[[[[DT_26]]]]": [
                 0, 
-                5, 
-                324110
+                11, 
+                922539
             ], 
             "[[[[DT_19]]]]": [
                 0, 
-                2, 
-                129802
+                1, 
+                922539
             ], 
             "[[[[DT_37]]]]": [
                 0, 
-                51, 
-                690906
+                43, 
+                324934
             ], 
             "[[[[DT_28]]]]": [
                 0, 
-                5, 
-                717639
+                12, 
+                922539
             ], 
             "[[[[DT_38]]]]": [
                 0, 
-                51, 
-                865336
+                3697, 
+                922539
             ], 
             "[[[[DT_18]]]]": [
                 0, 
                 1, 
-                965488
+                910304
             ], 
             "[[[[DT_0]]]]": [
                 -1, 
-                86320, 
-                194870
+                38585, 
+                922539
             ]
         }, 
-        "uuid": 27, 
-        "v6": 1
+        "uuid": 26, 
+        "v6": 0
     }, 
     {
         "_context_request_id": "req-[[[[UUID_0]]]]", 
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "scheduling", 
             "availability_zone": null, 
@@ -233,7 +233,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -261,8 +261,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -270,7 +270,7 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "scheduling", 
@@ -280,20 +280,19 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_3]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_2]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_1]]]]", 
+        "_unique_id": "[[[[XUUID_2]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -307,7 +306,7 @@
         "_context_quota_class": null, 
         "event_type": "scheduler.run_instance.start", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "request_spec": {
                 "num_instances": 1, 
@@ -340,22 +339,22 @@
                     "id": "[[[[UUID_2]]]]", 
                     "owner": "[[[[user_id]]]]", 
                     "min_ram": 512, 
-                    "checksum": "[[[[XUUID_2]]]]", 
+                    "checksum": "[[[[XUUID_3]]]]", 
                     "min_disk": 20, 
                     "is_public": true, 
                     "deleted_at": null, 
                     "properties": {
                         "vm_mode": "hvm", 
-                        "os_distro": "ubuntu", 
+                        "os_distro": "debian", 
                         "image_type": "base", 
                         "cache_in_nova": "True", 
-                        "org.openstack__1__os_distro": "com.ubuntu", 
+                        "org.openstack__1__os_distro": "org.debian", 
                         "os_type": "linux", 
                         "auto_disk_config": "disabled", 
-                        "org.openstack__1__os_version": "12.04", 
+                        "org.openstack__1__os_version": "7", 
                         "org.openstack__1__architecture": "x64"
                     }, 
-                    "size": 654421623
+                    "size": 412504821
                 }, 
                 "instance_type": {
                     "root_gb": 20, 
@@ -381,18 +380,18 @@
                     "vm_mode": "hvm", 
                     "deleted_at": null, 
                     "reservation_id": "[[[[reservation_id]]]]", 
-                    "id": 880501, 
+                    "id": 881389, 
                     "security_groups": {
                         "objects": [
                             {
                                 "project_id": "[[[[tenant_id]]]]", 
-                                "user_id": "[[[[user_id]]]]", 
+                                "user_id": "[[[[XUUID_1]]]]", 
                                 "description": "default", 
                                 "deleted": false, 
                                 "created_at": "[[[[DT_6]]]]", 
                                 "updated_at": null, 
                                 "deleted_at": null, 
-                                "id": 5140, 
+                                "id": 16231, 
                                 "name": "[[[[display_name]]]]"
                             }
                         ]
@@ -425,21 +424,21 @@
                     "access_ip_v6": null, 
                     "access_ip_v4": null, 
                     "deleted": false, 
-                    "key_name": null, 
+                    "key_name": "", 
                     "updated_at": null, 
                     "host": "[[[[host]]]]", 
                     "ephemeral_key_uuid": null, 
                     "architecture": "x64", 
-                    "user_id": "[[[[user_id]]]]", 
+                    "user_id": "[[[[XUUID_1]]]]", 
                     "system_metadata": {
                         "image_cache_in_nova": "True", 
                         "instance_type_id": "2", 
                         "image_min_ram": 512, 
-                        "image_os_distro": "ubuntu", 
+                        "image_os_distro": "debian", 
                         "instance_type_vcpu_weight": "10", 
                         "instance_type_ephemeral_gb": "0", 
-                        "image_org.openstack__1__os_version": "12.04", 
-                        "image_org.openstack__1__os_distro": "com.ubuntu", 
+                        "image_org.openstack__1__os_version": "7", 
+                        "image_org.openstack__1__os_distro": "org.debian", 
                         "image_org.openstack__1__architecture": "x64", 
                         "image_base_image_ref": "[[[[UUID_2]]]]", 
                         "instance_type_swap": "512", 
@@ -485,20 +484,19 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_4]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_9]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_3]]]]", 
+        "_unique_id": "[[[[XUUID_4]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -512,12 +510,12 @@
         "_context_quota_class": null, 
         "event_type": "scheduler.run_instance.scheduled", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "instance_id": "[[[[UUID_1]]]]", 
             "weighted_host": {
                 "host": "[[[[host]]]]", 
-                "weight": 100.0
+                "weight": 120.0
             }, 
             "request_spec": {
                 "num_instances": 1, 
@@ -550,22 +548,22 @@
                     "id": "[[[[UUID_2]]]]", 
                     "owner": "[[[[user_id]]]]", 
                     "min_ram": 512, 
-                    "checksum": "[[[[XUUID_2]]]]", 
+                    "checksum": "[[[[XUUID_3]]]]", 
                     "min_disk": 20, 
                     "is_public": true, 
                     "deleted_at": null, 
                     "properties": {
                         "vm_mode": "hvm", 
-                        "os_distro": "ubuntu", 
+                        "os_distro": "debian", 
                         "image_type": "base", 
                         "cache_in_nova": "True", 
-                        "org.openstack__1__os_distro": "com.ubuntu", 
+                        "org.openstack__1__os_distro": "org.debian", 
                         "os_type": "linux", 
                         "auto_disk_config": "disabled", 
-                        "org.openstack__1__os_version": "12.04", 
+                        "org.openstack__1__os_version": "7", 
                         "org.openstack__1__architecture": "x64"
                     }, 
-                    "size": 654421623
+                    "size": 412504821
                 }, 
                 "instance_type": {
                     "root_gb": 20, 
@@ -591,18 +589,18 @@
                     "vm_mode": "hvm", 
                     "deleted_at": null, 
                     "reservation_id": "[[[[reservation_id]]]]", 
-                    "id": 880501, 
+                    "id": 881389, 
                     "security_groups": {
                         "objects": [
                             {
                                 "project_id": "[[[[tenant_id]]]]", 
-                                "user_id": "[[[[user_id]]]]", 
+                                "user_id": "[[[[XUUID_1]]]]", 
                                 "description": "default", 
                                 "deleted": false, 
                                 "created_at": "[[[[DT_6]]]]", 
                                 "updated_at": null, 
                                 "deleted_at": null, 
-                                "id": 5140, 
+                                "id": 16231, 
                                 "name": "[[[[display_name]]]]"
                             }
                         ]
@@ -635,21 +633,21 @@
                     "access_ip_v6": null, 
                     "access_ip_v4": null, 
                     "deleted": false, 
-                    "key_name": null, 
+                    "key_name": "", 
                     "updated_at": null, 
                     "host": "[[[[host]]]]", 
                     "ephemeral_key_uuid": null, 
                     "architecture": "x64", 
-                    "user_id": "[[[[user_id]]]]", 
+                    "user_id": "[[[[XUUID_1]]]]", 
                     "system_metadata": {
                         "image_cache_in_nova": "True", 
                         "instance_type_id": "2", 
                         "image_min_ram": 512, 
-                        "image_os_distro": "ubuntu", 
+                        "image_os_distro": "debian", 
                         "instance_type_vcpu_weight": "10", 
                         "instance_type_ephemeral_gb": "0", 
-                        "image_org.openstack__1__os_version": "12.04", 
-                        "image_org.openstack__1__os_distro": "com.ubuntu", 
+                        "image_org.openstack__1__os_version": "7", 
+                        "image_org.openstack__1__os_distro": "org.debian", 
                         "image_org.openstack__1__architecture": "x64", 
                         "image_base_image_ref": "[[[[UUID_2]]]]", 
                         "instance_type_swap": "512", 
@@ -695,20 +693,19 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_5]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_10]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_4]]]]", 
+        "_unique_id": "[[[[XUUID_5]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -722,7 +719,7 @@
         "_context_quota_class": null, 
         "event_type": "scheduler.run_instance.end", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "request_spec": {
                 "num_instances": 1, 
@@ -755,22 +752,22 @@
                     "id": "[[[[UUID_2]]]]", 
                     "owner": "[[[[user_id]]]]", 
                     "min_ram": 512, 
-                    "checksum": "[[[[XUUID_2]]]]", 
+                    "checksum": "[[[[XUUID_3]]]]", 
                     "min_disk": 20, 
                     "is_public": true, 
                     "deleted_at": null, 
                     "properties": {
                         "vm_mode": "hvm", 
-                        "os_distro": "ubuntu", 
+                        "os_distro": "debian", 
                         "image_type": "base", 
                         "cache_in_nova": "True", 
-                        "org.openstack__1__os_distro": "com.ubuntu", 
+                        "org.openstack__1__os_distro": "org.debian", 
                         "os_type": "linux", 
                         "auto_disk_config": "disabled", 
-                        "org.openstack__1__os_version": "12.04", 
+                        "org.openstack__1__os_version": "7", 
                         "org.openstack__1__architecture": "x64"
                     }, 
-                    "size": 654421623
+                    "size": 412504821
                 }, 
                 "instance_type": {
                     "root_gb": 20, 
@@ -796,18 +793,18 @@
                     "vm_mode": "hvm", 
                     "deleted_at": null, 
                     "reservation_id": "[[[[reservation_id]]]]", 
-                    "id": 880501, 
+                    "id": 881389, 
                     "security_groups": {
                         "objects": [
                             {
                                 "project_id": "[[[[tenant_id]]]]", 
-                                "user_id": "[[[[user_id]]]]", 
+                                "user_id": "[[[[XUUID_1]]]]", 
                                 "description": "default", 
                                 "deleted": false, 
                                 "created_at": "[[[[DT_6]]]]", 
                                 "updated_at": null, 
                                 "deleted_at": null, 
-                                "id": 5140, 
+                                "id": 16231, 
                                 "name": "[[[[display_name]]]]"
                             }
                         ]
@@ -840,21 +837,21 @@
                     "access_ip_v6": null, 
                     "access_ip_v4": null, 
                     "deleted": false, 
-                    "key_name": null, 
+                    "key_name": "", 
                     "updated_at": null, 
                     "host": "[[[[host]]]]", 
                     "ephemeral_key_uuid": null, 
                     "architecture": "x64", 
-                    "user_id": "[[[[user_id]]]]", 
+                    "user_id": "[[[[XUUID_1]]]]", 
                     "system_metadata": {
                         "image_cache_in_nova": "True", 
                         "instance_type_id": "2", 
                         "image_min_ram": 512, 
-                        "image_os_distro": "ubuntu", 
+                        "image_os_distro": "debian", 
                         "instance_type_vcpu_weight": "10", 
                         "instance_type_ephemeral_gb": "0", 
-                        "image_org.openstack__1__os_version": "12.04", 
-                        "image_org.openstack__1__os_distro": "com.ubuntu", 
+                        "image_org.openstack__1__os_version": "7", 
+                        "image_org.openstack__1__os_distro": "org.debian", 
                         "image_org.openstack__1__architecture": "x64", 
                         "image_base_image_ref": "[[[[UUID_2]]]]", 
                         "instance_type_swap": "512", 
@@ -900,20 +897,19 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_6]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_11]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_5]]]]", 
+        "_unique_id": "[[[[XUUID_6]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -927,7 +923,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "", 
             "availability_zone": null, 
@@ -938,7 +934,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": "building", 
@@ -966,8 +962,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -975,7 +971,7 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": null, 
@@ -985,20 +981,19 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_7]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_13]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_6]]]]", 
+        "_unique_id": "[[[[XUUID_7]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -1012,7 +1007,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.create.start", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "scheduling", 
             "availability_zone": null, 
@@ -1023,7 +1018,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "image_meta": {
@@ -1031,8 +1026,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1040,7 +1035,7 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "launched_at": "", 
             "metadata": {}, 
@@ -1066,20 +1061,19 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_8]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_14]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_7]]]]", 
+        "_unique_id": "[[[[XUUID_8]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -1093,7 +1087,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "", 
             "availability_zone": null, 
@@ -1104,7 +1098,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1132,8 +1126,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1141,30 +1135,29 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": null, 
-            "audit_period_ending": "[[[[DT_15]]]]", 
+            "audit_period_ending": "[[[[DT_12]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_9]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_16]]]]", 
+        "timestamp": "[[[[DT_15]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_8]]]]", 
+        "_unique_id": "[[[[XUUID_9]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -1178,7 +1171,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "networking", 
             "availability_zone": null, 
@@ -1189,7 +1182,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": "building", 
@@ -1217,8 +1210,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1226,30 +1219,29 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "networking", 
-            "audit_period_ending": "[[[[DT_15]]]]", 
+            "audit_period_ending": "[[[[DT_12]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_10]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_17]]]]", 
+        "timestamp": "[[[[DT_16]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_9]]]]", 
+        "_unique_id": "[[[[XUUID_10]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -1263,7 +1255,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "block_device_mapping", 
             "availability_zone": null, 
@@ -1274,7 +1266,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": "building", 
@@ -1302,8 +1294,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1311,30 +1303,29 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "block_device_mapping", 
-            "audit_period_ending": "[[[[DT_15]]]]", 
+            "audit_period_ending": "[[[[DT_12]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_11]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_18]]]]", 
+        "timestamp": "[[[[DT_17]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_10]]]]", 
+        "_unique_id": "[[[[XUUID_11]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -1348,7 +1339,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "block_device_mapping", 
             "availability_zone": null, 
@@ -1359,7 +1350,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1387,8 +1378,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1396,30 +1387,29 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "block_device_mapping", 
-            "audit_period_ending": "[[[[DT_15]]]]", 
+            "audit_period_ending": "[[[[DT_12]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_12]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_19]]]]", 
+        "timestamp": "[[[[DT_18]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_11]]]]", 
+        "_unique_id": "[[[[XUUID_12]]]]", 
         "_context_glance_api_servers": null, 
         "_context_project_name": "[[[[tenant_id]]]]", 
         "_context_read_deleted": "no", 
@@ -1433,7 +1423,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -1444,7 +1434,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": "building", 
@@ -1472,8 +1462,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1481,113 +1471,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_20]]]]", 
+            "audit_period_ending": "[[[[DT_19]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
         "message_id": "[[[[UUID_13]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
-        ], 
-        "timestamp": "[[[[DT_21]]]]", 
-        "_context_timestamp": "[[[[DT_3]]]]", 
-        "_unique_id": "[[[[XUUID_12]]]]", 
-        "_context_glance_api_servers": null, 
-        "_context_project_name": "[[[[tenant_id]]]]", 
-        "_context_read_deleted": "no", 
-        "_context_tenant": "[[[[tenant_id]]]]", 
-        "_context_instance_lock_checked": false, 
-        "_context_project_id": "[[[[tenant_id]]]]", 
-        "_context_user_name": "[[[[user_id]]]]"
-    }, 
-    {
-        "_context_request_id": "req-[[[[UUID_0]]]]", 
-        "_context_quota_class": null, 
-        "event_type": "compute.instance.update", 
-        "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
-        "payload": {
-            "state_description": "spawning", 
-            "availability_zone": null, 
-            "terminated_at": "", 
-            "ephemeral_gb": 0, 
-            "instance_type_id": 2, 
-            "bandwidth": {}, 
-            "deleted_at": "", 
-            "reservation_id": "[[[[reservation_id]]]]", 
-            "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
-            "hostname": "[[[[hostname]]]]", 
-            "state": "building", 
-            "old_state": null, 
-            "old_task_state": null, 
-            "metadata": {}, 
-            "node": "[[[[node]]]]", 
-            "ramdisk_id": "", 
-            "access_ip_v6": null, 
-            "disk_gb": 20, 
-            "access_ip_v4": null, 
-            "kernel_id": "", 
-            "host": "[[[[host]]]]", 
-            "display_name": "[[[[display_name]]]]", 
-            "image_ref_url": "http://[[[[V4_2]]]]:9292/images/[[[[UUID_2]]]]", 
-            "audit_period_beginning": "[[[[DT_0]]]]", 
-            "root_gb": 20, 
-            "tenant_id": "[[[[tenant_id]]]]", 
-            "created_at": "[[[[DT_1]]]]", 
-            "launched_at": "", 
-            "memory_mb": 512, 
-            "instance_type": "512MB Standard Instance", 
-            "vcpus": 1, 
-            "image_meta": {
-                "container_format": "ovf", 
-                "min_ram": "512", 
-                "vm_mode": "hvm", 
-                "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
-                "image_type": "base", 
-                "disk_format": "vhd", 
-                "org.openstack__1__architecture": "x64", 
-                "auto_disk_config": "disabled", 
-                "min_disk": "20", 
-                "cache_in_nova": "True", 
-                "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
-            }, 
-            "architecture": "x64", 
-            "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_20]]]]", 
-            "os_type": "linux", 
-            "instance_flavor_id": "2"
-        }, 
-        "priority": "INFO", 
-        "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
-        "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_14]]]]", 
-        "_context_remote_address": "[[[[V4_1]]]]", 
-        "_context_roles": [
-            "checkmate", 
             "object-store:default", 
-            "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_22]]]]", 
+        "timestamp": "[[[[DT_20]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_13]]]]", 
         "_context_glance_api_servers": null, 
@@ -1603,7 +1507,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -1614,7 +1518,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1642,8 +1546,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1651,28 +1555,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_23]]]]", 
+            "audit_period_ending": "[[[[DT_19]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_15]]]]", 
+        "message_id": "[[[[UUID_14]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_24]]]]", 
+        "timestamp": "[[[[DT_21]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_14]]]]", 
         "_context_glance_api_servers": null, 
@@ -1688,7 +1591,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -1699,7 +1602,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1727,8 +1630,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1736,28 +1639,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_25]]]]", 
+            "audit_period_ending": "[[[[DT_22]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_16]]]]", 
+        "message_id": "[[[[UUID_15]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_26]]]]", 
+        "timestamp": "[[[[DT_23]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_15]]]]", 
         "_context_glance_api_servers": null, 
@@ -1773,7 +1675,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -1784,7 +1686,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1812,8 +1714,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1821,28 +1723,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_25]]]]", 
+            "audit_period_ending": "[[[[DT_24]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_17]]]]", 
+        "message_id": "[[[[UUID_16]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_27]]]]", 
+        "timestamp": "[[[[DT_25]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_16]]]]", 
         "_context_glance_api_servers": null, 
@@ -1858,7 +1759,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -1869,7 +1770,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1897,8 +1798,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1906,28 +1807,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_25]]]]", 
+            "audit_period_ending": "[[[[DT_26]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_18]]]]", 
+        "message_id": "[[[[UUID_17]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_28]]]]", 
+        "timestamp": "[[[[DT_27]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_17]]]]", 
         "_context_glance_api_servers": null, 
@@ -1943,7 +1843,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -1954,7 +1854,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -1982,8 +1882,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -1991,28 +1891,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_29]]]]", 
+            "audit_period_ending": "[[[[DT_28]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_19]]]]", 
+        "message_id": "[[[[UUID_18]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_30]]]]", 
+        "timestamp": "[[[[DT_29]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_18]]]]", 
         "_context_glance_api_servers": null, 
@@ -2028,7 +1927,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -2039,7 +1938,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -2067,8 +1966,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2076,28 +1975,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_31]]]]", 
+            "audit_period_ending": "[[[[DT_30]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_20]]]]", 
+        "message_id": "[[[[UUID_19]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_32]]]]", 
+        "timestamp": "[[[[DT_31]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_19]]]]", 
         "_context_glance_api_servers": null, 
@@ -2113,7 +2011,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -2124,7 +2022,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -2152,8 +2050,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2161,26 +2059,25 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_31]]]]", 
+            "audit_period_ending": "[[[[DT_32]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_21]]]]", 
+        "message_id": "[[[[UUID_20]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_33]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
@@ -2198,7 +2095,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -2209,7 +2106,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -2237,8 +2134,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2246,7 +2143,7 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
@@ -2256,16 +2153,15 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_22]]]]", 
+        "message_id": "[[[[UUID_21]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_35]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
@@ -2283,7 +2179,7 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
             "state_description": "spawning", 
             "availability_zone": null, 
@@ -2294,7 +2190,7 @@
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -2322,8 +2218,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2331,7 +2227,7 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
             "new_task_state": "spawning", 
@@ -2341,16 +2237,15 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_23]]]]", 
+        "message_id": "[[[[UUID_22]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_37]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
@@ -2368,18 +2263,27 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
-            "state_description": "spawning", 
+            "state_description": "deleting", 
             "availability_zone": null, 
             "terminated_at": "", 
             "ephemeral_gb": 0, 
             "instance_type_id": 2, 
-            "bandwidth": {}, 
+            "bandwidth": {
+                "public": {
+                    "bw_in": 0, 
+                    "bw_out": 0
+                }, 
+                "private": {
+                    "bw_in": 0, 
+                    "bw_out": 0
+                }
+            }, 
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
             "state": "building", 
             "old_state": null, 
@@ -2407,8 +2311,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2416,28 +2320,27 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
-            "new_task_state": "spawning", 
-            "audit_period_ending": "[[[[DT_36]]]]", 
+            "new_task_state": "deleting", 
+            "audit_period_ending": "[[[[DT_38]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_24]]]]", 
+        "message_id": "[[[[UUID_23]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
-        "timestamp": "[[[[DT_38]]]]", 
+        "timestamp": "[[[[DT_39]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
         "_unique_id": "[[[[XUUID_23]]]]", 
         "_context_glance_api_servers": null, 
@@ -2453,28 +2356,37 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.update", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
-            "state_description": "", 
+            "state_description": "deleting", 
             "availability_zone": null, 
             "terminated_at": "", 
             "ephemeral_gb": 0, 
             "instance_type_id": 2, 
-            "bandwidth": {}, 
+            "bandwidth": {
+                "public": {
+                    "bw_in": 0, 
+                    "bw_out": 0
+                }, 
+                "private": {
+                    "bw_in": 0, 
+                    "bw_out": 0
+                }
+            }, 
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
-            "state": "active", 
-            "old_state": "building", 
-            "old_task_state": "spawning", 
+            "state": "building", 
+            "old_state": null, 
+            "old_task_state": null, 
             "metadata": {}, 
             "node": "[[[[node]]]]", 
             "ramdisk_id": "", 
-            "access_ip_v6": "[[[[V6_0]]]]", 
+            "access_ip_v6": null, 
             "disk_gb": 20, 
-            "access_ip_v4": "[[[[V4_3]]]]", 
+            "access_ip_v4": null, 
             "kernel_id": "", 
             "host": "[[[[host]]]]", 
             "display_name": "[[[[display_name]]]]", 
@@ -2483,7 +2395,7 @@
             "root_gb": 20, 
             "tenant_id": "[[[[tenant_id]]]]", 
             "created_at": "[[[[DT_1]]]]", 
-            "launched_at": "[[[[DT_36]]]]", 
+            "launched_at": "", 
             "memory_mb": 512, 
             "instance_type": "512MB Standard Instance", 
             "vcpus": 1, 
@@ -2492,8 +2404,8 @@
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2501,26 +2413,25 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
             "architecture": "x64", 
-            "new_task_state": null, 
-            "audit_period_ending": "[[[[DT_39]]]]", 
+            "new_task_state": "deleting", 
+            "audit_period_ending": "[[[[DT_38]]]]", 
             "os_type": "linux", 
             "instance_flavor_id": "2"
         }, 
         "priority": "INFO", 
         "_context_is_admin": true, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_25]]]]", 
+        "message_id": "[[[[UUID_24]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_40]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 
@@ -2538,53 +2449,27 @@
         "_context_quota_class": null, 
         "event_type": "compute.instance.create.end", 
         "_context_auth_token": "[[[[XUUID_0]]]]", 
-        "_context_user_id": "[[[[user_id]]]]", 
+        "_context_user_id": "[[[[XUUID_1]]]]", 
         "payload": {
-            "state_description": "", 
+            "state_description": "scheduling", 
             "availability_zone": null, 
             "terminated_at": "", 
             "ephemeral_gb": 0, 
             "instance_type_id": 2, 
-            "message": "Success", 
+            "message": "Build of instance [[[[UUID_1]]]] aborted: Instance disappeared during build", 
             "deleted_at": "", 
             "reservation_id": "[[[[reservation_id]]]]", 
             "instance_id": "[[[[UUID_1]]]]", 
-            "user_id": "[[[[user_id]]]]", 
-            "fixed_ips": [
-                {
-                    "floating_ips": [], 
-                    "label": "public", 
-                    "version": 4, 
-                    "meta": {}, 
-                    "address": "[[[[V4_3]]]]", 
-                    "type": "fixed"
-                }, 
-                {
-                    "floating_ips": [], 
-                    "label": "public", 
-                    "version": 6, 
-                    "meta": {}, 
-                    "address": "[[[[V6_0]]]]", 
-                    "type": "fixed"
-                }, 
-                {
-                    "floating_ips": [], 
-                    "label": "private", 
-                    "version": 4, 
-                    "meta": {}, 
-                    "address": "[[[[V4_4]]]]", 
-                    "type": "fixed"
-                }
-            ], 
+            "user_id": "[[[[XUUID_1]]]]", 
             "hostname": "[[[[hostname]]]]", 
-            "state": "active", 
+            "state": "building", 
             "image_meta": {
                 "container_format": "ovf", 
                 "min_ram": "512", 
                 "vm_mode": "hvm", 
                 "base_image_ref": "[[[[UUID_2]]]]", 
-                "os_distro": "ubuntu", 
-                "org.openstack__1__os_distro": "com.ubuntu", 
+                "os_distro": "debian", 
+                "org.openstack__1__os_distro": "org.debian", 
                 "image_type": "base", 
                 "disk_format": "vhd", 
                 "org.openstack__1__architecture": "x64", 
@@ -2592,15 +2477,15 @@
                 "min_disk": "20", 
                 "cache_in_nova": "True", 
                 "os_type": "linux", 
-                "org.openstack__1__os_version": "12.04"
+                "org.openstack__1__os_version": "7"
             }, 
-            "launched_at": "[[[[DT_36]]]]", 
+            "launched_at": "", 
             "metadata": {}, 
             "node": "[[[[node]]]]", 
             "ramdisk_id": "", 
-            "access_ip_v6": "[[[[V6_0]]]]", 
+            "access_ip_v6": null, 
             "disk_gb": 20, 
-            "access_ip_v4": "[[[[V4_3]]]]", 
+            "access_ip_v4": null, 
             "kernel_id": "", 
             "image_name": "[[[[image_name]]]]", 
             "host": "[[[[host]]]]", 
@@ -2618,16 +2503,15 @@
         }, 
         "priority": "INFO", 
         "_context_is_admin": false, 
-        "_context_user": "[[[[user_id]]]]", 
+        "_context_user": "[[[[XUUID_1]]]]", 
         "publisher_id": "[[[[publisher_id]]]]", 
-        "message_id": "[[[[UUID_26]]]]", 
+        "message_id": "[[[[UUID_25]]]]", 
         "_context_remote_address": "[[[[V4_1]]]]", 
         "_context_roles": [
-            "checkmate", 
-            "object-store:default", 
+            "admin", 
             "compute:default", 
-            "identity:user-admin", 
-            "admin"
+            "object-store:default", 
+            "identity:default"
         ], 
         "timestamp": "[[[[DT_41]]]]", 
         "_context_timestamp": "[[[[DT_3]]]]", 

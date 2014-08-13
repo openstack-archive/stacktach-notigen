@@ -1,0 +1,126 @@
+[
+    {
+        "xuuid": 1, 
+        "v4": 2, 
+        "time_map": {
+            "[[[[DT_5]]]]": [
+                -1, 
+                86399, 
+                894053
+            ], 
+            "[[[[DT_1]]]]": [
+                -2, 
+                86399, 
+                866412
+            ], 
+            "[[[[DT_3]]]]": [
+                -1, 
+                86399, 
+                866412
+            ], 
+            "[[[[DT_4]]]]": [
+                0, 
+                0, 
+                0
+            ], 
+            "[[[[DT_0]]]]": [
+                -75, 
+                45627, 
+                866412
+            ], 
+            "[[[[DT_2]]]]": [
+                -75, 
+                45209, 
+                866412
+            ]
+        }, 
+        "uuid": 4, 
+        "v6": 1
+    }, 
+    {
+        "_context_request_id": "req-[[[[UUID_0]]]]", 
+        "_context_quota_class": null, 
+        "event_type": "compute.instance.exists", 
+        "_context_auth_token": null, 
+        "_context_user_id": "[[[[user_id]]]]", 
+        "payload": {
+            "state_description": "", 
+            "availability_zone": null, 
+            "terminated_at": "", 
+            "ephemeral_gb": 0, 
+            "instance_type_id": 7, 
+            "bandwidth": {
+                "public": {
+                    "bw_in": 0, 
+                    "bw_out": 0
+                }, 
+                "private": {
+                    "bw_in": 4803908381, 
+                    "bw_out": 202702569
+                }
+            }, 
+            "deleted_at": "", 
+            "reservation_id": "[[[[reservation_id]]]]", 
+            "instance_id": "[[[[UUID_1]]]]", 
+            "user_id": "[[[[user_id]]]]", 
+            "hostname": "[[[[hostname]]]]", 
+            "state": "active", 
+            "launched_at": "[[[[DT_0]]]]", 
+            "metadata": {}, 
+            "node": "[[[[node]]]]", 
+            "ramdisk_id": "", 
+            "access_ip_v6": "[[[[V6_0]]]]", 
+            "disk_gb": 620, 
+            "access_ip_v4": "[[[[V4_0]]]]", 
+            "kernel_id": "", 
+            "host": "[[[[host]]]]", 
+            "display_name": "[[[[display_name]]]]", 
+            "image_ref_url": "http://[[[[V4_1]]]]:9292/images/[[[[UUID_2]]]]", 
+            "audit_period_beginning": "[[[[DT_1]]]]", 
+            "root_gb": 620, 
+            "tenant_id": "[[[[tenant_id]]]]", 
+            "created_at": "[[[[DT_2]]]]", 
+            "memory_mb": 15360, 
+            "instance_type": "15GB Standard Instance", 
+            "vcpus": 6, 
+            "image_meta": {
+                "container_format": "ovf", 
+                "min_ram": "512", 
+                "base_image_ref": "[[[[UUID_2]]]]", 
+                "os_distro": "ubuntu", 
+                "org.openstack__1__os_distro": "com.ubuntu", 
+                "image_type": "base", 
+                "disk_format": "vhd", 
+                "org.openstack__1__architecture": "x64", 
+                "auto_disk_config": "True", 
+                "min_disk": "620", 
+                "cache_in_nova": "True", 
+                "os_type": "linux", 
+                "org.openstack__1__os_version": "12.04"
+            }, 
+            "architecture": "x64", 
+            "audit_period_ending": "[[[[DT_3]]]]", 
+            "os_type": "linux", 
+            "instance_flavor_id": "7"
+        }, 
+        "priority": "INFO", 
+        "_context_is_admin": true, 
+        "_context_user": "[[[[user_id]]]]", 
+        "publisher_id": "[[[[publisher_id]]]]", 
+        "message_id": "[[[[UUID_3]]]]", 
+        "_context_remote_address": null, 
+        "_context_roles": [
+            "admin"
+        ], 
+        "timestamp": "[[[[DT_4]]]]", 
+        "_context_timestamp": "[[[[DT_5]]]]", 
+        "_unique_id": "[[[[XUUID_0]]]]", 
+        "_context_glance_api_servers": null, 
+        "_context_project_name": "[[[[tenant_id]]]]", 
+        "_context_read_deleted": "no", 
+        "_context_tenant": "[[[[tenant_id]]]]", 
+        "_context_instance_lock_checked": false, 
+        "_context_project_id": "[[[[tenant_id]]]]", 
+        "_context_user_name": "[[[[user_id]]]]"
+    }
+]
