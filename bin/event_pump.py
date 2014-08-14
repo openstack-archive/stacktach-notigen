@@ -8,6 +8,7 @@ pip install --pre notification_utils
 
 
 import datetime
+import sys
 
 from notabene import kombu_driver as driver
 import notification_utils
@@ -22,16 +23,20 @@ queue = driver.create_queue(queue_name, exchange, queue_name,
                             channel=connection.channel())
 queue.declare()
 
-g = notigen.EventGenerator(1000)  # Number of operations per minute
+template_dir = sys.argv[1]
+print "Using template dir:", template_dir
+
+g = notigen.EventGenerator(template_dir, 1)
 now = datetime.datetime.utcnow()
 start = now
+end = now + datetime.timedelta(days=1)
 nevents = 0
-while nevents < 10000:
+while now < end:
     e = g.generate(now)
     if e:
         nevents += len(e)
         for event in e:
             driver.send_notification(event, queue_name, connection, exchange)
-            print nevents, event['when'], event['event_type']
+            print nevents, event['timestamp'], event['event_type']
 
     now = datetime.datetime.utcnow()
