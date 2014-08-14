@@ -137,7 +137,9 @@ class EventGenerator(object):
                 else:
                     self.instances_in_use.add(uuid)
 
-            print "%s %4s-%s %s" % (when, uuid[-4:], operation[17:], event['event_type'])
+            print "%s %4s-%s %s" % (when, uuid[-4:], operation[17:],
+                                    event['event_type'])
+            del event['____context____']
             ready.append(event)
 
         if (now - self.last_exists).days > 0:
@@ -154,6 +156,7 @@ class EventGenerator(object):
                                         operation, context_hints, template)
                 for when, event in sequence:
                     payload = event['payload']
+                    del event['____context____']
                     payload['audit_period_beginning'] = audit_period_start
                     payload['audit_period_ending'] = audit_period_start
                     payload['instance_id'] = instance

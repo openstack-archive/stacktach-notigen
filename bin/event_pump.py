@@ -24,9 +24,10 @@ queue = driver.create_queue(queue_name, exchange, queue_name,
 queue.declare()
 
 template_dir = sys.argv[1]
+rate = int(sys.argv[2])
 print "Using template dir:", template_dir
 
-g = notigen.EventGenerator(template_dir, 1)
+g = notigen.EventGenerator(template_dir, rate)
 now = datetime.datetime.utcnow()
 start = now
 end = now + datetime.timedelta(days=1)
