@@ -137,8 +137,6 @@ class EventGenerator(object):
                 else:
                     self.instances_in_use.add(uuid)
 
-            print "%s %4s-%s %s" % (when, uuid[-4:], operation[17:],
-                                    event['event_type'])
             del event['____context____']
             ready.append(event)
 
@@ -156,13 +154,11 @@ class EventGenerator(object):
                                         operation, context_hints, template)
                 for when, event in sequence:
                     payload = event['payload']
-                    del event['____context____']
-                    payload['audit_period_beginning'] = audit_period_start
-                    payload['audit_period_ending'] = audit_period_start
+                    payload['audit_period_beginning'] = str(audit_period_start)
+                    payload['audit_period_ending'] = str(audit_period_end)
                     payload['instance_id'] = instance
-                    print "%s %s %s" % (now, instance, event['event_type'])
                     ready.append(event)
-
+            self.instances_in_use = set()
         return ready
 
     def _get_sequence(self, now):

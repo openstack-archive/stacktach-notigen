@@ -23,9 +23,14 @@ queue = driver.create_queue(queue_name, exchange, queue_name,
                             channel=connection.channel())
 queue.declare()
 
+print "Usage: python event_pump.py <template_dir> <operations/hour> " \
+      "<realtime? 1/0>"
 template_dir = sys.argv[1]
 rate = int(sys.argv[2])
+realtime = int(sys.argv[3]) == 1
 print "Using template dir:", template_dir
+print "Rate:", rate
+print "Real-time?", realtime
 
 g = notigen.EventGenerator(template_dir, rate)
 now = datetime.datetime.utcnow()
@@ -38,6 +43,9 @@ while now < end:
         nevents += len(e)
         for event in e:
             driver.send_notification(event, queue_name, connection, exchange)
-            print nevents, event['timestamp'], event['event_type']
+            print event['timestamp'], event['event_type']
 
-    now = datetime.datetime.utcnow()
+    if realtime:
+        now = datetime.datetime.utcnow()
+    else:
+        now = g.move_to_next_tick(now)
